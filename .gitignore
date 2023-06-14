@@ -1,6 +1,6 @@
 /releases/*
 /SpritzTerminal/x64/*
 /SpritzTerminal/SpritzTerminal/x64/*
-/SpritzTerminal/.vs/*
+/SpritzTerminal/.vs/SpritzTerminal/v16/*
 /spritz-cl/target/*
 /spritz-cl/.idea/*

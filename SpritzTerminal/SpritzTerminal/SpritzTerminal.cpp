@@ -20,10 +20,14 @@ int main(int argc, char *argv[])
 
 
     if (!foundJRE) {
-        std::cout << "[ERROR]: Please install Java 8 (JRE) and add it to PATH!";
+        std::cout << "[ERROR]: Please install Java 8 (JRE) and add it to PATH!" << endl;
     }
     else {
-        system("java -jar spritz-cl.jar");
+        string args = "java -jar spritz-cli.jar ";
+        if (argc > 1) {
+            args.append(argv[1]);
+        }
+        system(args.c_str());
     }
     return -1;
 }
